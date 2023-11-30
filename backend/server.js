@@ -8,6 +8,7 @@ const port = process.env.PORT || 8000
 connectDB()
 
 const app = express()
+app.get('/test',(req ,res)=> res.send('testing end point'));
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
